@@ -1,0 +1,47 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    background-color: rgb(51, 218, 204);
+    display: flex;
+    margin: 60px 0px 0px 90px;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+
+.input {
+    margin: 40px 0px 0px 10px;
+}
+
+input {
+    background-color: lightcyan;
+    width: 60px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: dotted;
+    padding-left: 60px;
+    margin-left: 30px;
+}
+
+button {
+    margin-top: 230px;
+    float: right;
+    margin-right: 20px;
+    width: 90px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+}
+
+span {
+    background-color: rgba(119, 191, 196, 0.74);
+    margin-right: 200px;
+    margin-top: 250px;
+}

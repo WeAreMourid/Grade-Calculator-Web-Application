@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOURID MOHAMMED</title>
+    <link rel="stylesheet" href="face.css">
+</head>
+<body>
+<div class="container">
+    <div class="input">
+        Saisir la moyenne des contrôles (/20) :
+        <input type="number" min="0" max="20" id="moyC">
+    </div>
+    <div class="input">
+        Saisir la note de L'EFM (/40) :
+        <input type="number" min="0" max="40" id="noteEFM">
+    </div>
+
+    <button onclick="f1()">Note Module</button>
+    <span id="result"></span>
+    <span id="imogi"></span>
+</div>
+
+<script>
+    function f1() {
+        let N = parseFloat(document.getElementById("moyC").value);
+        let f = parseFloat(document.getElementById("noteEFM").value);
+        let s = (N + f) / 3;
+        var r = document.getElementById("result");
+        r.innerText = s;
+
+        if (s <= 7) {
+            const cry = "😢";
+            var x = document.getElementById("imogi");
+            x.innerText = cry;
+        } else if (s >= 10) {
+            const j = "😑";
+            var x = document.getElementById("imogi");
+            x.innerText = j;
+        } else if (s >= 15) {
+            const b = "🤑";
+            var x = document.getElementById("imogi");
+            x.innerText = b;
+        } else {
+            console.log("error");
+        }
+    }
+</script>
+</body>
+</html>
